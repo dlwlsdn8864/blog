@@ -1,24 +1,19 @@
-import logo from './logo.svg';
 import './App.css';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import HomePage from './pages/HomePage.js'
+import MoneyChange from './pages/MoneyChange.js'
+import Header from './components/MenuBarHeader.js'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Header/>
+      <div style={{ marginTop: '60px' }}></div> {/* Header 높이만큼의 마진 추가 */}
+      <Routes>
+        <Route path='/' element={<HomePage/>}/>
+        <Route path='/moneyChange' element={<MoneyChange/>}/>
+      </Routes>
+    </Router>
   );
 }
 
