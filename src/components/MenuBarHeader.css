@@ -1,15 +1,17 @@
-.header {  /**/ /*메뉴바가 속하는 상단의 공간*/
-    position: fixed;
-    top: 0;
-    right: 0;
-    padding: 10px;
-    background-color: #f8f9fa; 
-    z-index: 1000;
-    width: 100%;
-    display: flex;
-    justify-content: flex-end;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
+.header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0; /* left: 0을 추가해 header를 전체 너비에 걸쳐 고정 */
+  height: 37px; /* Header의 높이 설정 */
+  padding: 10px;
+  background-color: #f8f9fa;
+  z-index: 1000;
+  display: flex;
+  justify-content: flex-end;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
   
   .dropdown {
     position: relative;

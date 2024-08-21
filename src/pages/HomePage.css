@@ -1,0 +1,23 @@
+.homepage {
+    display: flex;
+    flex-direction: column; /* 아이템들을 수직으로 정렬 */
+    align-items: center; /* 수평 중앙 정렬 */
+    height: 100vh; /* 뷰포트의 전체 높이를 차지 */
+    padding-top: 60px; /* Header와의 간격 확보 */
+  }
+  
+.income-expense {
+    display: flex;
+    justify-content: center; /* 가로축에서 아이템들을 중앙 정렬 */
+    align-items: center; /* 세로축에서 아이템들을 중앙 정렬 */
+    font-size: 24px;
+    font-weight: bold;
+    gap: 10px; /* 각 요소 사이의 간격 */
+  }
+
+.divider {
+    width: 4px; /* 선의 두께 */
+    height: 40px; /* 선의 높이 */
+    background-color: #ced4da; /* 선의 색상 */
+    margin: 0 70px; /* 좌우 간격 */
+  }
