@@ -12,6 +12,16 @@
   background-color: gray;
 }
 
+.page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start; /* 상단에 붙여서 정렬 */
+  height: 100vh;
+  padding-top: 37px;
+  box-sizing: border-box; /* 패딩을 포함한 크기 계산 */
+}
+
 .moneyChange{
   
   background-color: white;
