@@ -1,10 +1,14 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import './MoneyChangeButton.css';
 
 const MoneyChangeButton = ({ date, text, amount, type }) => {
+  const to_link = useNavigate();
+  const 소비량수정 =()=>{
+    to_link('/');
+  }
   return (
-    <button className={`custom-button ${type === 0 ? 'expense' : 'income'}`}>
+    <button className={`custom-button ${type === 0 ? 'expense' : 'income'}`} onClick={소비량수정}>
       <div className="content">
         <div className="top-left">
           <div className="date">{date}</div>

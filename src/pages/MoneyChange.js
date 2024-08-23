@@ -11,7 +11,7 @@ function MoneyChange(){
     let [수입, 수입변경] = useState(200000);
     return(
         <div className="page">
-            <MoneyChangeButton date="2024-08-23" text="학사 1일 안내자 알바" amount="$100" type={1} />
+            <MoneyChangeButton date="2024-08-23" text="일단은 homepage로 이동하게 설정" amount="$100" type={1} />
             <MoneyChangeButton date="2024-08-24" text="집주인 월세" amount="$100" type={0}/>
             <FloatingButton />
         </div>

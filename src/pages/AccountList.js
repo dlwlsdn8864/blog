@@ -12,7 +12,8 @@ function AccountList(){
     return(
         <div className="page">
             <AccountButton name="a계좌" text="xxxx-xxxx-xxxx" amount={300000}/>
-            <AccountButton name="b계좌" amount={500000}/>
+            <AccountButton name="b계좌" text="임시로 homepage로 이동설정" amount={500000}/>
+            <AccountButton name="c계좌" amount={500000}/>
             <FloatingButton/>
         </div>
     )
