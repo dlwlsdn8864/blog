@@ -11,6 +11,7 @@ function Header() {
           <Link to="/">Home</Link>
           <Link to="/moneychange">Money Change</Link>
           <Link to="/accountlist">Account List</Link>
+          <Link to="/paychart">Pay Chart</Link>
         </div>
       </div>
     </header>
