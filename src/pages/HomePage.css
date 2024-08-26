@@ -6,6 +6,9 @@
     font-weight: bold;
     gap: 10px; /* 각 요소 사이의 간격 */
   }
+.barchart_shell{
+  background-color: azure;
+}
 
 .divider {
     width: 4px; /* 선의 두께 */
@@ -65,12 +68,7 @@
     font-size: 1.35rem; /* 날짜 텍스트 크기 */
   }
   
-  .income-amount {
-    color: blue; /* 수익 금액 색상 */
-    font-size: 0.75rem; /* 수익 금액 폰트 크기 */
+  .custom-datepicker .react-datepicker__day {
+    position: relative; /* 상대 위치로 설정하여 절대 위치의 자식 요소 배치 가능 */
   }
   
-  .expense-amount {
-    color: red; /* 지출 금액 색상 */
-    font-size: 0.75rem; /* 지출 금액 폰트 크기 */
-  }

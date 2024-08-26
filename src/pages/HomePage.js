@@ -7,6 +7,7 @@ import DatePicker, { registerLocale } from 'react-datepicker'; //캘린더 라�
 import ko from 'date-fns/locale/ko';
 import 'react-datepicker/dist/react-datepicker.css';
 
+import MonthPayChart from "../components/MonthPayChart";
 import '../index.css';
 
 
@@ -24,6 +25,22 @@ function HomePage(){
     navigate(`/moneychange?date=${formattedDate}`); // MoneyChange 페이지로 이동
   };
 
+  const data = [
+    { month: '1', 만원: 20,},
+    { month: '2', 만원: 70,},
+    { month: '3', 만원: 50,},
+    { month: '4', 만원: 40,},
+    { month: '5', 만원: 60,},
+    { month: '6', 만원: 10,},
+    { month: '7', 만원: 40,},
+    { month: '8', 만원: 70,},
+    { month: '9', 만원: 30,},
+    { month: '10', 만원: 20,},
+    { month: '11', 만원: 20,},
+    { month: '11', 만원: 40,}
+  ];
+  // 현재 월을 구하는 로직
+  const currentMonth = new Intl.DateTimeFormat('en-US', { month: 'numeric' }).format(new Date());
 
     return(
     <div className="page">
@@ -43,6 +60,9 @@ function HomePage(){
             inline
             calendarClassName="custom-datepicker" //캘린더 모양
           />
+      </div>
+      <div className="barchart_shell">
+        <MonthPayChart data={data} currentMonth={currentMonth} />
       </div>
     </div>
     
